@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Cake3D } from '../Cake3D';
-import { MilkMochaSticker } from '../cartoons/MilkMochaSticker';
 import { triggerConfettiBurst } from '../ConfettiEffect';
 import { playFanfareSound, playClickSound } from '../../utils/sound';
 import { GlowingButton } from '../GlowingButton';
@@ -101,9 +100,6 @@ export const Scene8: React.FC<Scene8Props> = ({ onContinue }) => {
           transition={{ duration: 0.8 }}
           className="w-full flex flex-col items-center"
         >
-          {/* Milk and Mocha Sticker */}
-          <MilkMochaSticker scene={8} />
-
           {/* Instructions */}
           {!isCut ? (
             <div className="mb-4 space-y-1">
