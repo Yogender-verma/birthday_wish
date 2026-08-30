@@ -7,6 +7,7 @@ import { ConfettiEffect, triggerConfettiBurst } from '../ConfettiEffect';
 import { playFanfareSound } from '../../utils/sound';
 import { Sparkles } from 'lucide-react';
 import { GlowingButton } from '../GlowingButton';
+import { FireworkRockets } from '../FireworkRockets';
 
 interface Scene7Props {
   onReplay?: () => void;
@@ -48,6 +49,9 @@ export const Scene7: React.FC<Scene7Props> = ({ onContinue }) => {
       transition={{ duration: 1.5 }}
       className="flex flex-col items-center justify-center text-center px-4 py-12 min-h-screen max-w-4xl mx-auto relative z-10"
     >
+      {/* Sky Fireworks & Rocket Light Animations after Stage 3 */}
+      {stage >= 3 && <FireworkRockets />}
+
       {/* Continuous soft confetti after stage 3 */}
       {stage >= 3 && <ConfettiEffect trigger={true} continuous={true} />}
 

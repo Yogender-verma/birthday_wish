@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { birthdayPerson } from '../../config';
 import { ConfettiEffect } from '../ConfettiEffect';
+import { FireworkRockets } from '../FireworkRockets';
 import { playClickSound } from '../../utils/sound';
 import { RotateCcw, Sparkles, Heart, Star } from 'lucide-react';
 
@@ -25,6 +26,9 @@ export const Scene13: React.FC<Scene13Props> = ({ onReplay }) => {
       transition={{ duration: 1.5 }}
       className="flex flex-col items-center justify-center text-center px-4 py-12 min-h-screen max-w-4xl mx-auto relative z-10 space-y-8 overflow-hidden"
     >
+      {/* Sky Firework Rockets */}
+      <FireworkRockets />
+
       {/* Soft Ambient Confetti */}
       <ConfettiEffect trigger={true} continuous={true} />
 

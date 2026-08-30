@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GlowingButton } from '../GlowingButton';
 import { ConfettiEffect } from '../ConfettiEffect';
+import { FireworkRockets } from '../FireworkRockets';
 import { MilkMochaSticker } from '../cartoons/MilkMochaSticker';
 import { playFanfareSound } from '../../utils/sound';
 import { Sparkles, Heart } from 'lucide-react';
@@ -67,6 +68,9 @@ export const Scene9: React.FC<Scene9Props> = ({ onContinue }) => {
       transition={{ duration: 0.8 }}
       className="flex flex-col items-center justify-center text-center px-4 py-8 min-h-screen max-w-2xl mx-auto relative z-10 overflow-hidden"
     >
+      {/* Sky Firework Rockets & Explosions */}
+      <FireworkRockets />
+
       {/* Floating Animated Balloons */}
       <FloatingBalloons />
 
