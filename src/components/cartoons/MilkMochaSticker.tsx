@@ -62,10 +62,10 @@ export const MilkMochaSticker: React.FC<MilkMochaStickerProps> = ({ scene }) => 
       emoji: '🍰',
     },
     9: {
-      primary: 'https://media.giphy.com/media/artj92V8o75VPL7AeQ/giphy.gif',
+      primary: 'https://media.tenor.com/2v5A8R-3u8cAAAAC/milk-and-mocha-celebration.gif',
       fallback: 'https://media.tenor.com/g8Vd_kQn25YAAAAC/milk-and-mocha-dance.gif',
-      alt: 'Milk and Mocha Celebration Party',
-      emoji: '🎉',
+      alt: 'Milk and Mocha Excited Celebration After Cake Cut',
+      emoji: '🥳',
     },
     10: {
       primary: 'https://media.giphy.com/media/3o7TKTDn976rzVgky4/giphy.gif',
