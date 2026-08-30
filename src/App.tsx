@@ -9,6 +9,12 @@ import { Scene4 } from './components/scenes/Scene4';
 import { Scene5 } from './components/scenes/Scene5';
 import { Scene6 } from './components/scenes/Scene6';
 import { Scene7 } from './components/scenes/Scene7';
+import { Scene8 } from './components/scenes/Scene8';
+import { Scene9 } from './components/scenes/Scene9';
+import { Scene10 } from './components/scenes/Scene10';
+import { Scene11 } from './components/scenes/Scene11';
+import { Scene12 } from './components/scenes/Scene12';
+import { Scene13 } from './components/scenes/Scene13';
 
 export function App() {
   const [currentScene, setCurrentScene] = useState<number>(1);
@@ -22,6 +28,11 @@ export function App() {
     setIsWarping(warping);
   };
 
+  const handleReplay = () => {
+    setIsWarping(false);
+    goToScene(1);
+  };
+
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[#0B0716] text-white selection:bg-purple-500 selection:text-white">
       {/* Sound Toggle (Top-Right) */}
@@ -32,9 +43,9 @@ export function App() {
         speedMultiplier={
           isWarping ? 6 : currentScene === 4 ? 3 : currentScene >= 5 ? 1.5 : 1
         }
-        glowIntensity={currentScene === 4 ? 2.5 : currentScene === 7 ? 2 : 1}
+        glowIntensity={currentScene === 4 ? 2.5 : currentScene === 7 || currentScene === 13 ? 2 : 1}
         isWarping={isWarping}
-        isFinalScene={currentScene === 7}
+        isFinalScene={currentScene === 13}
       />
 
       {/* Main Full-Screen Scene Container */}
@@ -88,10 +99,50 @@ export function App() {
           {currentScene === 7 && (
             <Scene7
               key="scene7"
-              onReplay={() => {
-                setIsWarping(false);
-                goToScene(1);
-              }}
+              onContinue={() => goToScene(8)}
+              onReplay={handleReplay}
+            />
+          )}
+
+          {currentScene === 8 && (
+            <Scene8
+              key="scene8"
+              onContinue={() => goToScene(9)}
+            />
+          )}
+
+          {currentScene === 9 && (
+            <Scene9
+              key="scene9"
+              onContinue={() => goToScene(10)}
+            />
+          )}
+
+          {currentScene === 10 && (
+            <Scene10
+              key="scene10"
+              onContinue={() => goToScene(11)}
+            />
+          )}
+
+          {currentScene === 11 && (
+            <Scene11
+              key="scene11"
+              onContinue={() => goToScene(12)}
+            />
+          )}
+
+          {currentScene === 12 && (
+            <Scene12
+              key="scene12"
+              onContinue={() => goToScene(13)}
+            />
+          )}
+
+          {currentScene === 13 && (
+            <Scene13
+              key="scene13"
+              onReplay={handleReplay}
             />
           )}
         </AnimatePresence>
