@@ -6,12 +6,14 @@ import { SurpriseWishJar } from '../SurpriseWishJar';
 import { ConfettiEffect, triggerConfettiBurst } from '../ConfettiEffect';
 import { playFanfareSound, playClickSound } from '../../utils/sound';
 import { RotateCcw, Sparkles } from 'lucide-react';
+import { GlowingButton } from '../GlowingButton';
 
 interface Scene7Props {
   onReplay: () => void;
+  onContinue?: () => void;
 }
 
-export const Scene7: React.FC<Scene7Props> = ({ onReplay }) => {
+export const Scene7: React.FC<Scene7Props> = ({ onReplay, onContinue }) => {
   const [stage, setStage] = useState<number>(0);
 
   useEffect(() => {
@@ -121,13 +123,19 @@ export const Scene7: React.FC<Scene7Props> = ({ onReplay }) => {
           {/* Interactive Wish Jar Cards */}
           <SurpriseWishJar />
 
-          {/* Replay Experience Button */}
+          {/* Action Buttons: Cut the Cake & Replay */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.8, duration: 0.8 }}
-            className="pt-6 pb-8"
+            className="pt-6 pb-8 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
+            {onContinue && (
+              <GlowingButton onClick={onContinue} variant="strong" size="lg">
+                LET'S CUT THE CAKE 🎂 →
+              </GlowingButton>
+            )}
+
             <button
               onClick={handleReplayClick}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 text-purple-200 hover:text-white text-sm font-semibold border border-purple-400/20 hover:border-purple-400/50 backdrop-blur-md transition-all duration-300 cursor-pointer"
@@ -141,3 +149,4 @@ export const Scene7: React.FC<Scene7Props> = ({ onReplay }) => {
     </motion.div>
   );
 };
+
