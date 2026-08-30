@@ -43,3 +43,15 @@ export const surpriseWishes = [
     text: "Keep shining brighter every day and inspiring everyone around you."
   }
 ];
+
+// Final personal message for Step 12
+export const finalMessage = `Some people deserve more than just a simple birthday wish.
+
+I wanted to make something a little different for you.
+
+I hope you smiled at least once while going through this whole thing. ❤️
+
+Have an absolutely amazing year ahead.
+
+Happy Birthday once again! 🎂✨`;
+
