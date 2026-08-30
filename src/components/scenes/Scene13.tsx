@@ -17,7 +17,7 @@ export const Scene13: React.FC<Scene13Props> = ({ onReplay }) => {
   };
 
   const nameStr = (birthdayPerson || '').toString().trim();
-  const recipientDisplay = nameStr !== '' && nameStr !== 'NAME' ? nameStr : 'You';
+  const recipientDisplay = nameStr !== '' && nameStr !== 'NAME' ? nameStr : 'TO YOU 🎉';
 
   return (
     <motion.div
