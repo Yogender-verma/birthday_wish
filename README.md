@@ -1,32 +1,31 @@
-# React + TypeScript + Vite
+# 🎂 Birthday Surprise Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A cinematic, interactive 13-step birthday surprise web application designed to create an unforgettable birthday celebration experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Link
 
-## React Compiler
+👉 **[https://birthday-wish-green-phi.vercel.app](https://birthday-wish-green-phi.vercel.app)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ✨ Major 3 Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+1. **🎂 Interactive Real Cake Cutting**: Drag or swipe a 3D knife downwards to slice the birthday cake, triggering real slice separation, laser cut trails, extinguished candles with smoke trails, sound effects, and confetti.
+2. **🎁 Animated 3D Gift Box Unboxing**: Interactive glowing gift box with a multi-stage unboxing sequence (shake → ribbon loosen → lid lift → interior light burst → confetti explosion).
+3. **🚀 Sky Firework Rockets & Animated Stickers**: Shooting sky rockets exploding into firework light bursts alongside authentic Milk & Mocha animated sticker cards across all story steps.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19, TypeScript, Vite
+- **Styling & Motion**: TailwindCSS, Framer Motion
+- **Effects & Sound**: Canvas Confetti, HTML5 Canvas Firework Engine, Web Audio API
+
+---
+
+## ❤️ Made By
+
+Created with ❤️ by **Yogender Verma**
