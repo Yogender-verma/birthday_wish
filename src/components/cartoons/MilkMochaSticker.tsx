@@ -49,6 +49,48 @@ export const MilkMochaSticker: React.FC<MilkMochaStickerProps> = ({ scene }) => 
       alt: 'Milk and Mocha Magical Star',
       emoji: '✨',
     },
+    7: {
+      primary: 'https://media.giphy.com/media/l4KibW1bB5FGYAwuY/giphy.gif',
+      fallback: 'https://media.tenor.com/J3c0QJg_l8AAAAAC/milk-and-mocha-bear.gif',
+      alt: 'Milk and Mocha Birthday Wish',
+      emoji: '🎂',
+    },
+    8: {
+      primary: 'https://media.giphy.com/media/3o7E4F2G3Wn9U3m2l0/giphy.gif',
+      fallback: 'https://media.tenor.com/J3c0QJg_l8AAAAAC/milk-and-mocha-bear.gif',
+      alt: 'Milk and Mocha Cake Cut',
+      emoji: '🍰',
+    },
+    9: {
+      primary: 'https://media.giphy.com/media/artj92V8o75VPL7AeQ/giphy.gif',
+      fallback: 'https://media.tenor.com/g8Vd_kQn25YAAAAC/milk-and-mocha-dance.gif',
+      alt: 'Milk and Mocha Celebration Party',
+      emoji: '🎉',
+    },
+    10: {
+      primary: 'https://media.giphy.com/media/3o7TKTDn976rzVgky4/giphy.gif',
+      fallback: 'https://media.tenor.com/5V84-yS1g4wAAAAC/milk-and-mocha-bear.gif',
+      alt: 'Milk and Mocha Wait Surprise',
+      emoji: '👀',
+    },
+    11: {
+      primary: 'https://media.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif',
+      fallback: 'https://media.tenor.com/J69y2d80c3MAAAAC/milk-and-mocha.gif',
+      alt: 'Milk and Mocha Gift Box',
+      emoji: '🎁',
+    },
+    12: {
+      primary: 'https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif',
+      fallback: 'https://media.tenor.com/J3c0QJg_l8AAAAAC/milk-and-mocha-bear.gif',
+      alt: 'Milk and Mocha Personal Love',
+      emoji: '❤️',
+    },
+    13: {
+      primary: 'https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif',
+      fallback: 'https://media.tenor.com/J3c0QJg_l8AAAAAC/milk-and-mocha-bear.gif',
+      alt: 'Milk and Mocha Forever Birthday',
+      emoji: '✨',
+    },
   };
 
   const currentGif = gifMap[scene] || gifMap[1];

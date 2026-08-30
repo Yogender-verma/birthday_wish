@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { GiftBox } from '../GiftBox';
+import { MilkMochaSticker } from '../cartoons/MilkMochaSticker';
 import { GlowingButton } from '../GlowingButton';
 import { Sparkles, Gift } from 'lucide-react';
 import { playClickSound } from '../../utils/sound';
@@ -45,6 +46,9 @@ export const Scene11: React.FC<Scene11Props> = ({ onContinue }) => {
         <p className="text-lg sm:text-2xl font-bold text-pink-200">
           Open it.
         </p>
+
+        {/* Milk & Mocha Animated Sticker Card */}
+        <MilkMochaSticker scene={11} />
       </motion.div>
 
       {/* Interactive Gift Box */}

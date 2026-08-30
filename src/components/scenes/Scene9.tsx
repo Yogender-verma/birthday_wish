@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GlowingButton } from '../GlowingButton';
 import { ConfettiEffect } from '../ConfettiEffect';
+import { MilkMochaSticker } from '../cartoons/MilkMochaSticker';
 import { playFanfareSound } from '../../utils/sound';
 import { Sparkles, Heart } from 'lucide-react';
 
@@ -125,6 +126,9 @@ export const Scene9: React.FC<Scene9Props> = ({ onContinue }) => {
         >
           You officially survived the surprise.
         </motion.p>
+
+        {/* Milk & Mocha Animated Sticker Card */}
+        <MilkMochaSticker scene={9} />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

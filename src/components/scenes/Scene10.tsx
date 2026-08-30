@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GlowingButton } from '../GlowingButton';
-import { CartoonDuo } from '../cartoons/CartoonDuo';
+import { MilkMochaSticker } from '../cartoons/MilkMochaSticker';
 import { Sparkles } from 'lucide-react';
 
 interface Scene10Props {
@@ -72,13 +72,7 @@ export const Scene10: React.FC<Scene10Props> = ({ onContinue }) => {
             Nahhh 😭
           </h2>
 
-          <motion.div
-            animate={{ rotate: [-3, 3, -3] }}
-            transition={{ repeat: Infinity, duration: 2.5, ease: 'easeInOut' }}
-            className="my-2"
-          >
-            <CartoonDuo scene={6} />
-          </motion.div>
+          <MilkMochaSticker scene={10} />
 
           <div className="flex items-center gap-2 text-pink-300 text-sm font-semibold">
             <Sparkles className="w-4 h-4 animate-spin" />
