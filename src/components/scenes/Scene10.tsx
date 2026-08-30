@@ -77,7 +77,7 @@ export const Scene10: React.FC<Scene10Props> = ({ onContinue }) => {
             transition={{ repeat: Infinity, duration: 2.5, ease: 'easeInOut' }}
             className="my-2"
           >
-            <CartoonDuo emotion="giggle" size="md" />
+            <CartoonDuo scene={6} />
           </motion.div>
 
           <div className="flex items-center gap-2 text-pink-300 text-sm font-semibold">

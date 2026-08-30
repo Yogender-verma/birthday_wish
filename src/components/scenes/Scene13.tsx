@@ -15,10 +15,8 @@ export const Scene13: React.FC<Scene13Props> = ({ onReplay }) => {
     onReplay();
   };
 
-  const recipientDisplay =
-    birthdayPerson && typeof birthdayPerson === 'string' && birthdayPerson.trim() !== '' && birthdayPerson !== 'NAME'
-      ? birthdayPerson
-      : 'You';
+  const nameStr = (birthdayPerson || '').toString().trim();
+  const recipientDisplay = nameStr !== '' && nameStr !== 'NAME' ? nameStr : 'You';
 
   return (
     <motion.div

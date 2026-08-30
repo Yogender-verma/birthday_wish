@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { finalMessage, senderName } from '../../config';
 import { GlowingButton } from '../GlowingButton';
-import { Heart, Sparkles } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 interface Scene12Props {
   onContinue: () => void;
